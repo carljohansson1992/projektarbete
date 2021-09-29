@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="container">    
@@ -35,6 +36,20 @@
                             <a class="nav-link" href="contacts.html">Kontakta mig</a>
                         </li>
                     </ul>
+                </div>
+                <div class="mobile-nav">
+                    <div class="button_container toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+                    <div class="overlay" id="overlay">
+                        <nav class="overlay-menu">
+                            <ul>
+                                <li><a href="index.html">Hem</a></li>
+                                 <li><a class="toggle" href="gallery.html">Galleri</a></li>
+                                 <li><a class="toggle" href="blog.html">Blogg</a></li>
+                                <li><a class="toggle" href="about.html">Om mig</a></li>
+                                <li><a class="toggle" href="contacts.html">Kontakta mig</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </header>
             
@@ -69,5 +84,12 @@
             </footer>
         </div>
     </div>
+    <script>
+        jQuery(document).ready(function($){
+        $('.toggle').click(function() {
+           $('.button_container').toggleClass('active');
+           $('#overlay').toggleClass('open');
+          });
+        });</script>
 </body>
 </html>
