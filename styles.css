@@ -1,0 +1,335 @@
+.container{
+    background-color: #FFFBEB;
+    padding: 2rem;
+}
+.main-wrapper{
+    background-color:  #FEF3C7;
+    box-shadow: 2px 3px 6px 4px rgba(0,0,0,0.4);
+   
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: #FDE68A;
+    height: 100px;
+    width: 100%;
+    position: static;
+    top: 0;
+}
+
+
+.logo-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    padding: 0.5rem;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: #FDE68A;
+    border-top-right-radius: 1rem;
+    width: 100%;
+    max-width: 1300px;
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    display: flex;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 24px;
+    color: black;
+}
+
+a:hover{
+    background-color: #F59E0B;
+    transition: ease-in 0.5s; 
+    box-shadow: 2px 3px 6px 4px rgba(0,0,0,0.4);
+    
+}
+.active{
+    background-color: #F59E0B;
+    box-shadow: 2px 3px 6px 4px rgba(0,0,0,0.4);
+}
+
+.gallery-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    padding: 20px;
+
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.gallery-image{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px 4px rgba(0,0,0,0.4);
+
+}
+ 
+footer{
+    background-color: #FDE68A;
+}
+.footer-link{
+    text-decoration: none;
+    display: flex;
+    background-color: #F59E0B;
+    border-radius: 10px;
+    width: 100px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    font-family: 'Amatic SC', cursive;
+    color: black;
+    box-shadow: 2px 3px 6px 4px rgba(0,0,0,0.4);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.hero{
+    display: flex;
+    width: 100%;
+}
+
+.hero-text{
+    width: 50%;
+}
+
+.cover{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.cover-container{
+    position: relative;
+    text-align: center;
+}
+.cover-text-1{
+    position: absolute;
+    top: 7%;
+    left: 50%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 130px;
+}
+.cover-text-2{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 65px;
+}
+.cover-text-3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    top: 53%;
+    left: 5%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+}
+.cover-text-4{
+    position: absolute;
+    top: 62%;
+    left: 5%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 40px;
+
+}
+.cover-link{
+        text-decoration: none;
+        display: flex;
+        background-color: transparent;
+        border-radius: 10px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-family: 'Amatic SC', cursive;
+        font-size: 45px;
+        color: black;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 200px;
+}
+.face-wrapper{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 20%;
+    height: 100%
+}
+.face-logo{
+    height: 70%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 30%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Amatic SC', cursive;
+    font-size: 21px;
+}
+.footer-section>p{
+    margin: 0px;
+}
+
+.contact-container{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.full-logo{
+    width: 100%;
+}
+.contact-text{
+    text-align: center;
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+.form-image{
+    display: flex;
+    align-content: flex-start;
+    width: 100%;
+    padding: 30px;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+}
+.form-container>form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 20px;
+}
+.adress-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+}
+input[type=text], select, textarea, [type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #F59E0B;
+    border-radius: 5px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+input[type=submit] {
+    background-color: #F59E0B;
+    color: #FFFBEB;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+  }
+  label{
+    font-family: 'Amatic SC', cursive;
+    color: black;
+    font-size: 22px;
+  }
+  .blog-wrapper{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      row-gap: 20px;
+      column-gap: 20px;
+      padding: 20px;
+      margin-top: 40px;
+      margin-bottom: 40px;
+  }
+  .article{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding: 20px;
+      background-color: #FDE68A;
+      border-radius: 15px;
+      box-shadow: 2px 3px 6px 4px rgba(0,0,0,0.4);
+  }
+  .blog-image{
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;   
+    }
+    .article>h2{
+        font-family: 'Amatic SC', cursive;
+        font-size: 30px;
+        text-align: center;
+    }
+    .article>p{
+        font-family: 'Amatic SC', cursive;
+        font-size: 21px;
+    }
+    .article-link{
+        text-decoration: none;
+        display: flex;
+         background-color: #F59E0B;
+         border-radius: 10px;
+         width: 100px;
+         height: 40px;
+        justify-content: center;
+       align-items: center;
+        border-radius: 8px;
+        font-family: 'Amatic SC', cursive;
+        font-size: 21px;
+        color: black;
+        box-shadow: 2px 3px 6px 4px rgba(0,0,0,0.4);
+    }
