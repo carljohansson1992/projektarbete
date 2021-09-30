@@ -7,6 +7,7 @@ header{
     display: flex;
     flex-direction: row;
     position: sticky;
+    z-index: 10;
     top: 0;
     background-color: #FDE68A;
     height: 7em;
@@ -488,9 +489,6 @@ input[type=submit] {
 .logo-wrapper{
     width: 40%;
 }
-header{
-    position: static;
-}
 .navbar{
     display: flex;
     align-items: center;
@@ -539,9 +537,8 @@ a:hover{
     height: 700px;
 }
 .cover{
-    display: unset;
+    display: block;
     width: 100%;
-    height: auto;
     object-fit: cover;
 }
 .cover-container{
