@@ -1,0 +1,8 @@
+[
+    {
+        "title": "en titel/rubrik för bilden",
+        "description": "Bildtext",
+        "url": "sökväg till bilden",
+        "alt": "alt text för bilden"
+    }
+]
