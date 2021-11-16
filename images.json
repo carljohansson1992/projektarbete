@@ -2,61 +2,61 @@
     {
         "title": "Bauhausstol",
         "description": "En klassik stol i stålrör med en sits av björk som är flätad i rotting.",
-        "url": "projektarbete-webbproduktion/images/Gallery-1.jpg",
+        "url": "/projektarbete-webbproduktion/images/Gallery-1.jpg",
         "alt": "Stol av stålrör, björk och rotting"
     },
     {
         "title": "Konferencestol",
         "description": "En gul konferencestol av formpressad plast.",
-        "url": "projektarbete-webbproduktion/images/Gallery-2.jpg",
+        "url": "/projektarbete-webbproduktion/images/Gallery-2.jpg",
         "alt": "En gul stol av plast"
     },
     {
         "title": "Loungestol",
         "description": "Lounge-stol av formpressad björk med plymåer av ljus textil.",
-        "url": "projektarbete-webbproduktion/images/Gallery-3.jpg",
+        "url": "/projektarbete-webbproduktion/images/Gallery-3.jpg",
         "alt": "Lounge-stol av trä med ljusa dynor"
     },
     {
         "title": "Läderfåtölj",
         "description": "Stilren och bekväm fåtölj av konjaksfärgat läder.",
-        "url": "projektarbete-webbproduktion/images/Gallery-4.jpg",
+        "url": "/projektarbete-webbproduktion/images/Gallery-4.jpg",
         "alt": "Fåtölj i brunt läder"
     },
     {
         "title": "Askfanerad matsalsstol",
         "description": "En matsalsstol med en sits av askfaner och benställning av teak.",
-        "url": "projektarbete-webbproduktion/images/Gallery-5.jpg",
+        "url": "/projektarbete-webbproduktion/images/Gallery-5.jpg",
         "alt": "En matsalsstol i askfaner"
     },
     {
         "title": "Konferencestol av stålrör",
         "description": "Konference i stålrör med arm och ryggstöd i ask samt en sitdyna av orange galon.",
-        "url": "projektarbete-webbproduktion/images/Gallery-6.jpg",
+        "url": "/projektarbete-webbproduktion/images/Gallery-6.jpg",
         "alt": "Stålrörsstol med arm och ryggstöd av trä"
     },
     {
         "title": "Snurrfåtölj",
         "description": "En stoppad linnefåtölj klädd med linnetyg och en snurrbar benställning.",
-        "url": "projektarbete-webbproduktion/images/Gallery-7.jpg",
+        "url": "/projektarbete-webbproduktion/images/Gallery-7.jpg",
         "alt": "Snurrbar fåtölj klädd med linnetyg"
     },
     {
         "title": "Mockafåtölj",
         "description": "Fåtölj klädd i mörk mocka med en benställing av valnöt.",
-        "url": "projektarbete-webbproduktion/images/Gallery-8.jpg",
+        "url": "/projektarbete-webbproduktion/images/Gallery-8.jpg",
         "alt": "Fåtölj i mocka med benställning av trä"
     },
     {
         "title": "Pinnstol",
         "description": "En pinnstol i mörkbetsad bok med basat ryggstöd.",
-        "url": "projektarbete-webbproduktion/images/Gallery-9.jpg",
+        "url": "/projektarbete-webbproduktion/images/Gallery-9.jpg",
         "alt": "Mörk pinnstol"
     },
     {
         "title": "Tygfåtölj",
         "description": "Mörkgrön tygfåtölj med ben och armstöd av mörkbetsad björk.",
-        "url": "projektarbete-webbproduktion/images/Gallery-10.jpg",
+        "url": "/projektarbete-webbproduktion/images/Gallery-10.jpg",
         "alt": "Mörkgrön fåtölj med ben och armstöd av trä"
     }
 ]
