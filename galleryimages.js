@@ -1,7 +1,7 @@
 
 let galleryWrapper = document.querySelector('.gallery-wrapper');
 let popupCont = document.querySelector('.popup-container');
-
+let jsonImages;
 fetchImages(createImage);
 
 function fetchImages(x){
@@ -10,11 +10,14 @@ fetch('/projektarbete-webbproduktion/images.json')
     return response.json();
 })
 .then(data => {
+    jsonImages = data;
     x(data);
+    console.log(jsonImages[3].url);
 })
 .catch(error => console.log(error));
 };
 
+console.log(jsonImages);
 /*function createPopup(){
     let popUpImg = document.createElement('img');
     let popUpText = document.createElement('p');
@@ -31,11 +34,11 @@ fetch('/projektarbete-webbproduktion/images.json')
 */
 function createImage(images)    {
     
-images.forEach((image) => {
+images.forEach((image, index) => {
         
         let testDiv = document.createElement('div');
         testDiv.className = 'image-container';
-        
+        testDiv.setAttribute('src', image.url);
 
         let titleElement = document.createElement('h2');
         titleElement.textContent = image.title;
@@ -46,9 +49,12 @@ images.forEach((image) => {
         img.setAttribute('src', image.url);
         img.setAttribute('alt', image.alt);
         img.setAttribute('title', image.description);
+        img.dataset.index = index;
         img.addEventListener('click', popup);
 
-
+        //let descriptionElement = document.createElement('p');
+        //descriptionElement.textContent = image.description;
+       // descriptionElement.className = 'gallery-description';
 
         //let popUpImg = document.createElement('img');
         //let popUpText = document.createElement('p');
@@ -70,6 +76,7 @@ images.forEach((image) => {
         galleryWrapper.appendChild(testDiv);
         testDiv.appendChild(titleElement);
         testDiv.appendChild(img);
+        //testDiv.appendChild(descriptionElement);
         //popupCont.appendChild(popUpImg);
         //popupCont.appendChild(popUpText);
 
@@ -77,21 +84,22 @@ images.forEach((image) => {
     });
 }
 function popup(e){
-
+    
     let popUpImg = document.createElement('img');
-    let popUpText = document.createElement('p');
+    let currentImg = jsonImages[e.target.dataset.index];
 
     popupCont.style.display = "flex";
 
     popUpImg.className = "popup-img";
-    popUpImg.setAttribute('src', e.target.src);
-        
-    popUpText.className = "popup-text";
-    popUpText.textContent = e.target.title;
+    popUpImg.setAttribute('src', currentImg.url);
 
-    popupCont.appendChild(popUpImg);
-    popupCont.appendChild(popUpText);
-    console.log(e.target);
+    let popUpText = document.createElement('p');
+    popUpText.textContent = currentImg.description;
+    popUpText.className = "popup-text";
+    
+    popupCont.replaceChildren(popUpImg, popUpText);
+    console.log(currentImg.url);
+
 }
 //function popup(){
     //fetchImages(createPopup);
