@@ -5,7 +5,7 @@ let jsonImages;
 fetchImages();
 
 function fetchImages(){
-    fetch('/projektarbete-webbproduktion/images.json')
+    fetch('/images.json')
     .then(function (response) {
         return response.json();
     })
