@@ -70,7 +70,7 @@ header{
     box-shadow: 2px 3px 6px 4px rgba(0,0,0,0.4);
 }
 .popup-img{
-    width: 100%;
+    width: 50%;
     height: 450px;
     object-fit: cover;
     border-radius: 10px;

@@ -54,7 +54,6 @@ function popup(e){
     popUpImg.className = "popup-img";
     popUpImg.setAttribute('src', currentImg.url);
 
-
     let popUpText = document.createElement('p');
     popUpText.textContent = currentImg.description;
     popUpText.className = "popup-text";
@@ -65,7 +64,7 @@ function popup(e){
     quit.addEventListener('click', closePop);
     
     popupCont.replaceChildren(popUpImg, popUpText, quit);
-    console.log(currentImg.url);
+    console.log(jsonImages[e.target.dataset.index]);
 }
 
 function closePop(){
