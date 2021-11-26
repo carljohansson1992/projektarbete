@@ -1,18 +1,17 @@
-
 let galleryWrapper = document.querySelector('.gallery-wrapper');
 let popupCont = document.querySelector('.popup-container');
 let jsonImages;
 
-fetchImages(createImage);
+fetchImages();
 
-function fetchImages(x){
+function fetchImages(){
     fetch('/projektarbete-webbproduktion/images.json')
     .then(function (response) {
         return response.json();
     })
     .then(data => {
         jsonImages = data;
-        x(data);
+        createImage(data);
     })
     .catch(error => console.log(error));
 }
@@ -64,7 +63,6 @@ function popup(e){
     quit.addEventListener('click', closePop);
     
     popupCont.replaceChildren(popUpImg, popUpText, quit);
-    console.log(jsonImages[e.target.dataset.index]);
 }
 
 function closePop(){
