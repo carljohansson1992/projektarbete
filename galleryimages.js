@@ -34,7 +34,6 @@ images.forEach((image, index) => {
         img.className = 'gallery-image';
         img.setAttribute('src', image.url);
         img.setAttribute('alt', image.alt);
-        img.setAttribute('title', image.description);
         img.dataset.index = index;
         img.addEventListener('click', popup);
 
