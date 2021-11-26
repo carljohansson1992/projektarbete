@@ -1,5 +1,6 @@
 
 
+
 .main-wrapper{
     background-color: #FEF3C7;
 }
@@ -44,33 +45,64 @@ header{
 }
 .gallery-title{
     display: flex;
+    text-decoration-line: underline;
     justify-content: center;
     width: 100%;
+    cursor: default;
     font-family: 'Amatic SC', cursive;
 }
 .pop-wrapper{
     display: flex;
     justify-content: center;
+
 }
 .popup-container{
     display: none;
     justify-content: center;
     flex-direction: row;
-    width: 700px;
+    margin-top: 0px;
+    width: 70%;
     height: 500px;
-    background-color: #FFFBEB;
+    background-color: #FDE68A;
     position: fixed;
     z-index: 200;
-    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px 4px rgba(0,0,0,0.4);
 }
 .popup-img{
-    width: 50%;
-    height: 500px;
+    width: 100%;
+    height: 450px;
     object-fit: cover;
+    border-radius: 10px;
+    margin: 25px;
+    
 }
 .popup-text{
+    background-color: #FDE68A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    margin-right: 25px;
 }
+.quit-button{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    border: none;
+    background-color: #FDE68A;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    cursor: pointer;
+}
+.quit-button:hover{
+    background-color: #F59E0B;
+    border-radius: 5px;
+    box-shadow: 2px 3px 6px 4px rgba(0,0,0,0.4);
+    transition: ease-in 0.5s; 
+}    
 footer{
     background-color: #FDE68A;
     display: flex;
