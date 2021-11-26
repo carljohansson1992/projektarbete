@@ -23,17 +23,21 @@ function createImage(images){
 images.forEach((image, index) => {
         
         let testDiv = document.createElement('div');
+        
         testDiv.className = 'image-container';
         testDiv.setAttribute('src', image.url);
 
         let titleElement = document.createElement('h2');
+
         titleElement.textContent = image.title;
         titleElement.className = 'gallery-title';
 
         let img = document.createElement('img');
+
         img.className = 'gallery-image';
         img.setAttribute('src', image.url);
         img.setAttribute('alt', image.alt);
+        img.setAttribute('title', image.title);
         img.dataset.index = index;
         img.addEventListener('click', popup);
 
