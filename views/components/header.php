@@ -10,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="galleryimages.js" defer></script>
 </head>
 <body>
-    <div class="container">    
+    <div class="container">
         <div class="main-wrapper">
             <header>
                 <div class="logo-wrapper">
@@ -21,19 +22,25 @@
                 <div class="navbar">
                     <ul class="navigation">
                         <li>
-                            <a class="nav-link active" href="index.html">Hem</a>
+                            <a class="nav-link" href="index.php">Hem</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="gallery.html">Galleri</a>
+                            <a class="nav-link" href="gallery.php">Galleri</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="blog.html">Blogg</a>
+                            <a class="nav-link" href="blog.php">Blogg</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="about.html">Om mig</a>
+                            <a class="nav-link" href="about.php">Om mig</a>
                         </li>
                         <li>
-                            <a class="nav-link" href="contacts.html">Kontakta mig</a>
+                            <a class="nav-link" href="contacts.php">Kontakta mig</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="register.php">Registrera dig</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="login.php">Logga in</a>
                         </li>
                     </ul>
                 </div>
@@ -52,44 +59,3 @@
                     </div>
                 </div>
             </header>
-            
-            <div class="cover-container">
-                <img class="cover" src="images/Cover.jpg">
-                <div class="cover-text-1">Välkommen!</div>
-                <div class="cover-text-2">Funderar du på en ny möbel?</div>
-                <div class="cover-text-3">
-                    <a class="cover-link" href="gallery.html">Kika in mitt galleri!</a>
-                </div>
-                <div class="cover-text-4">
-                    <a class="cover-link" href="contacts.html">Eller kontakta mig om du har frågor!</a>
-                </div>
-            </div>
-
-            <footer>
-                <div class="footer-section">
-                    <h3>Kortfattat</h3>
-                 <p>Carls Träbyrå tillverkar och marknadsför 
-                    handgjorda möbler ur egen kollektion och utför 
-                    måttbeställda fin- och möbelsnickerier 
-                    till privatpersoner och företag.
-                    Snickeriet ligger på Norragrängesbergsgatan i Malmö.</p>
-                </div>
-                <div class="face-wrapper">
-                    <img class="face-logo" src="images/face.svg">
-                </div>
-                <div class="footer-section">
-                    <h3>Kontakt</h3>
-                    <a class="footer-link" href="contacts.html">Tryck här!</a>
-                </div>
-            </footer>
-        </div>
-    </div>
-    <script>
-        jQuery(document).ready(function($){
-        $('.toggle').click(function() {
-           $('.button_container').toggleClass('active');
-           $('#overlay').toggleClass('open');
-          });
-        });</script>
-</body>
-</html>

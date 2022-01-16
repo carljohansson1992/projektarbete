@@ -5,7 +5,7 @@ let jsonImages;
 fetchImages();
 
 function fetchImages(){
-    fetch('/images.json')
+    fetch('images.json')
     .then(function (response) {
         return response.json();
     })
@@ -19,11 +19,11 @@ function fetchImages(){
 
 
 function createImage(images){
-    
+
 images.forEach((image, index) => {
-        
+
         let testDiv = document.createElement('div');
-        
+
         testDiv.className = 'image-container';
         testDiv.setAttribute('src', image.url);
 
@@ -48,7 +48,7 @@ images.forEach((image, index) => {
 }
 
 function popup(e){
-    
+
     let popUpImg = document.createElement('img');
     let currentImg = jsonImages[e.target.dataset.index];
 
@@ -64,13 +64,11 @@ function popup(e){
     quit.textContent = "X";
     quit.className = "quit-button";
     quit.addEventListener('click', closePop);
-    
+
     popupCont.replaceChildren(popUpImg, popUpText, quit);
 }
 
 function closePop(){
-    
+
     popupCont.style.display = "none";
 }
-
- 
