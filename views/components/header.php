@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,9 +43,16 @@
                         <li>
                             <a class="nav-link" href="register.php">Registrera dig</a>
                         </li>
-                        <li>
-                            <a class="nav-link" href="login.php">Logga in</a>
-                        </li>
+
+                            <?php
+                                if (isset($_SESSION['loggedin'])){
+                                    echo "<li><a class='nav-link' href='logout.php'>Logga ut</a></li>";
+                                } else {
+                                    echo "<li><a class='nav-link' href='login.php'>Logga in</a></li>";
+                                }
+                                ?>
+
+
                     </ul>
                 </div>
                 <div class="mobile-nav">

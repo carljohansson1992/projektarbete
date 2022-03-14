@@ -8,9 +8,9 @@
                     <div class="form-container">
                         <form action="login-user.php" method="POST">
                             <label for="">Användarnamn</label>
-                            <input type="text" id="username" name="email" placeholder="Ditt användarnamn.." required>
+                            <input type="email" id="username" name="email" placeholder="Ditt användarnamn.." required>
                             <label for="password">Lösenord</label>
-                            <input type="text" id="password" name="password" required>
+                            <input type="password" id="password" name="password" required>
                             <input type="submit" value="Skicka">
                         </form>
                     </div>

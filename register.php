@@ -10,7 +10,7 @@
                             <label>Användarnamn</label>
                             <input type="text" name="username" placeholder="Ditt användarnamn.." required>
                             <label>email</label>
-                            <input type="text" name="email" placeholder="Din mail.." required>
+                            <input type="email" name="email" placeholder="Din mail.." required>
                             <label>Lösenord</label>
                             <input type="password" name="password" required>
                             <button class="blog-btn" type="submit">Registrera dig</button>
