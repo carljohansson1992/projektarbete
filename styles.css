@@ -315,6 +315,29 @@ input[type=submit] {
         font-family: 'Amatic SC', cursive;
         font-size: 20px;
 }
+.user-blog-btn{
+
+    margin: 8px;
+    background-color: #F59E0B;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 50%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+}
+.user-form-container{
+    display: flex;
+    justify-content: center;
+}
+.edit-form-container{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+
 .blog-form{
     display: flex;
     width: 50%;

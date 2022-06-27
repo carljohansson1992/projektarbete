@@ -10,15 +10,15 @@
                     <img class="full-logo" src="images/full-logo.svg">
                   </div>
                   <div class="form-container">
-                    <form action="">
-                      <label for="fname">Förnamn</label>
-                      <input type="text" id="fname" name="firstname" placeholder="Ditt namn..">
-                      <label for="lname">Efternamn</label>
-                      <input type="text" id="lname" name="lastname" placeholder="Ditt efternamn..">
-                      <label for="email">Mailadress</label>
-                      <input type="email" id="email" name="email" placeholder="Din mailadress..">
-                      <label for="subject">Vad har du på hjärtat?</label>
-                      <textarea id="subject" name="subject" placeholder="Skriv något.." style="height:170px"></textarea>
+                    <form action="contact-form.php" method="POST">
+                      <!-- <label for="fname">Förnamn</label> -->
+                      <input type="text"  name="firstname" placeholder="Ditt namn..">
+                      <!-- <label for="lname">Efternamn</label> -->
+                      <input type="text"  name="lastname" placeholder="Ditt efternamn..">
+                      <!-- <label for="email">Mailadress</label> -->
+                      <input type="email"  name="email" placeholder="Din mailadress..">
+                      <!-- <label for="subject">Vad har du på hjärtat?</label> -->
+                      <textarea id="subject" name="content" placeholder="Skriv något.." style="height:170px"></textarea>
                       <input type="submit" value="Skicka">
                     </form>
                   </div>

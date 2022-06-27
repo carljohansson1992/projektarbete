@@ -1,38 +1,27 @@
 <?php
-// session_start();
 
 
 
-// function redirectTo($url = null)
-// {
-//     $url = $url ?? '';
-//     header("Location: http://localhost/projektarbete-webbproduktion/$url");
-//     exit;
-// }
-//function connectToDb(){
-    try {
 
-    $database = new PDO('mysql:host=127.0.0.1;dbname=uppgift', 'root', 'root');
-    } catch (PDOException $e) {
-         die($e->getMessage());
-    }
-    //}
+function redirectTo($url = null)
+{
+    $url = $url ?? '';
+    header("Location: http://localhost/projektarbete-webbproduktion/$url");
+    exit;
+}
 
-// function fetchAllresults($database){
-//     $statement = $pdo->prepare('select * from posts');
+try {
+    $connect = new PDO('mysql:host=127.0.0.1;dbname=uppgift', 'root', 'root');
+} catch (PDOException $e) {
+    "there was a failure" . $e->getMessage();
+}
 
-//     $statement->execute();
+function dd($data){
 
-//     return $statement->fetchAll(PDO::FETCH_OBJ);
-//    }
+    echo '<pre>';
 
-// function dd($data){
+    die(var_dump($data));
 
-//     echo '<pre>';
-
-//     die(var_dump($data));
-
-//     echo '</pre>';
-// }
+    echo '</pre>';
+}
 ?>
-<script> console.log("IS THIS EVEN HERE????")</script>
